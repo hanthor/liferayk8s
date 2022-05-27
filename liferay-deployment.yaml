@@ -72,11 +72,11 @@ spec:
           value: "true"
         - name: LIFERAY_REDIRECT_PERIOD_URL_PERIOD_SECURITY_PERIOD_MODE #La usaremos para permitir los redirect en el cluster
           value: "domain"
-        image: liferay/portal:7.3.1-ga2
+        image: liferay/portal:7.4.3.26-ga26
         resources:
           requests: #Recursos que se aprovisionan al memomento de arrancar el pod
-            memory: "2048Mi"
-            cpu: "2"
+            memory: "128Mi"
+            cpu: "0.1"
           limits: #Limite de recursos que podrá disponer el pod
             memory: "4098Mi"
             cpu: "3"

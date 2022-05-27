@@ -1,0 +1,8 @@
+# Tiltfile
+
+k8s_yaml('database-deployment.yaml')
+k8s_yaml('liferay-deployment.yaml') 
+k8s_yaml('search-deployment.yaml')
+#k8s_yaml('nginx-ingress.yaml')
+
+#k8s_resource('liferay', port_forwards=8080)
